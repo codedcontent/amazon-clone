@@ -13,17 +13,55 @@ const Home = () => {
         />
 
         <div className="home__row">
-          <Product />
-          {/* Product */}
+          <Product
+            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
+            price="29.99"
+            img="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            alt="The lean startup"
+            rating={5}
+          />
+          <Product
+            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
+            price="29.99"
+            img="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            alt="The lean startup"
+            rating={5}
+          />
         </div>
 
         <div className="home__row">
-          {/* Product */}
-          {/* Product */}
-          {/* Product */}
+          <Product
+            title="The lean startup"
+            price="29.99"
+            img="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            alt="The lean startup"
+            rating={5}
+          />
+          <Product
+            title="The lean startup"
+            price="29.99"
+            img="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            alt="The lean startup"
+            rating={5}
+          />
+          <Product
+            title="The lean startup"
+            price="29.99"
+            img="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            alt="The lean startup"
+            rating={5}
+          />
         </div>
 
-        <div className="home__row">{/* Product */}</div>
+        <div className="home__row">
+          <Product
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
+            price="29.99"
+            img="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            alt="The lean startup"
+            rating={5}
+          />
+        </div>
       </div>
     </div>
   );
