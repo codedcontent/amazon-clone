@@ -3,8 +3,11 @@ import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import { ShoppingBasketOutlined } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
 
 const Header = () => {
+  const [{ basket }] = useStateValue();
+
   return (
     <div className="header">
       <Link to="/">
@@ -42,7 +45,9 @@ const Header = () => {
           <div className="header__optionBasket">
             <ShoppingBasketOutlined />
 
-            <span className="header__basketCount header__optionLineTwo">0</span>
+            <span className="header__basketCount header__optionLineTwo">
+              {basket?.length ?? 0}
+            </span>
           </div>
         </Link>
       </div>

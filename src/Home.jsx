@@ -14,6 +14,7 @@ const Home = () => {
 
         <div className="home__row">
           <Product
+            id={1}
             title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
             price="29.99"
             img="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
@@ -21,6 +22,7 @@ const Home = () => {
             rating={5}
           />
           <Product
+            id={2}
             title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
             price="29.99"
             img="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
@@ -31,25 +33,28 @@ const Home = () => {
 
         <div className="home__row">
           <Product
-            title="The lean startup"
+            title="Something fucking else"
             price="29.99"
             img="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
-            alt="The lean startup"
+            alt="Something fucking else"
             rating={5}
+            id={3}
           />
           <Product
-            title="The lean startup"
+            title="Something fucking else"
             price="29.99"
             img="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
-            alt="The lean startup"
+            alt="Something fucking else"
             rating={5}
+            id={3}
           />
           <Product
-            title="The lean startup"
+            title="Something fucking else"
             price="29.99"
             img="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
-            alt="The lean startup"
+            alt="Something fucking else"
             rating={5}
+            id={3}
           />
         </div>
 
@@ -59,7 +64,8 @@ const Home = () => {
             price="29.99"
             img="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
             alt="The lean startup"
-            rating={5}
+            rating={2}
+            id={4}
           />
         </div>
       </div>
