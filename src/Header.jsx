@@ -14,6 +14,7 @@ const Header = () => {
         <img
           className="header__logo"
           src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          alt="amazon header logo"
         />
       </Link>
 
@@ -25,10 +26,12 @@ const Header = () => {
       </div>
 
       <div className="header__nav">
-        <div className="header__option">
-          <span className="header__optionLineOne">Hello Guest</span>
-          <span className="header__optionLineTwo">Sign In</span>
-        </div>
+        <Link to="/login">
+          <div className="header__option">
+            <span className="header__optionLineOne">Hello Guest</span>
+            <span className="header__optionLineTwo">Sign In</span>
+          </div>
+        </Link>
 
         <div className="header__option">
           {" "}
