@@ -8,12 +8,13 @@ import Login from "./Login";
 import "./firebase";
 import { getAuth } from "firebase/auth";
 import { useStateValue } from "./StateProvider";
+import Payment from "./Payment";
 
 const MainAppWrapper = () => {
   // ref to track page render
   const pageRenderRef = useRef(0);
 
-  //   Our context api with out data
+  //   Our context api with our data
   const [_, dispatch] = useStateValue();
 
   useEffect(() => {
@@ -45,6 +46,7 @@ const MainAppWrapper = () => {
         <Route path="/" element={<App />}>
           <Route path="/" element={<Home />}></Route>
           <Route path="checkout" element={<Checkout />}></Route>
+          <Route path="payment" element={<Payment />}></Route>
           <Route path="*" element={<h1>Page Not found</h1>}></Route>
         </Route>
 
